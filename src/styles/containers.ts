@@ -12,7 +12,7 @@ type container={
 
 export const Container = styled.div<container>`
     display: ${props=>props.block?'block': 'flex'};
-    box-sizing:   border-box;
+    box-sizing: border-box;
     height: ${(props)=>props.height?props.height:'auto'};
     width: ${(props)=>props.width?props.width:'auto'};
     align-items: ${props=>props.align?props.align:''};
@@ -31,13 +31,15 @@ export const ResponsiveContainer = styled.div`
         padding-inline: 10px;
     }
     @media (min-width: 600px) {
-        max-width: 600px;
+        max-width: 992px;
+        padding-inline: 30px;
     }
     @media (min-width: 992px) {
         
-        max-width: 600px;
+        max-width: 1300px;
+        padding-inline: 50px;
     }
-    padding-inline: 10px;
+    
 `;
 
 export const LinkSection = styled.a`
