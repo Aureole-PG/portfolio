@@ -15,12 +15,12 @@ export default function App() {
             </Container>
             <Nav/>
         </Container>
-        <Container className="min-height">
+        <Container id="about" className="min-height">
             <Container height="100vh" width="100vw" align="center" justify="center" >
                 About
             </Container>
         </Container>
-        <Container className="min-height" align="center" justify="center"  >
+        <Container id="projects" className="min-height" align="center" justify="center"  >
             <ResponsiveContainer>
                 <h1>Projets</h1>
                 <Grid>
@@ -30,24 +30,16 @@ export default function App() {
                             imgUrl="https://via.placeholder.com/150"
                             name="nombre"
                         />
-                        // <Container>
-                        //     <Card key={i}>
-                        //         <Img src="https://via.placeholder.com/150"/>
-                        //         <FocusContent>
-                        //             <Container block  padding="0 10px 0 10px">
-                        //                 <h4>nombre</h4>
-                        //                 <p>
-                        //                     Lorem ipsum dolor, sit amet ciciatis excepturi earum sit id aliquid ad modi inventore aspernatur veritatis, rerum doloribus.</p> 
-                        //             </Container>
-                        //         </FocusContent>
-                        //     </Card>
-                            
-                            
-                        // </Container>
                     ))}
                 </Grid>
             </ResponsiveContainer>
                  
+        </Container>
+        <Container id="skills" className="min-height" align="center" justify="center"  >
+                        skill
+        </Container>
+        <Container id="social" className="min-height" align="center" justify="center"  >
+                    social
         </Container>
         </>
     )

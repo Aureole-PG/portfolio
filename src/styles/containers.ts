@@ -50,10 +50,13 @@ export const LinkSection = styled.a`
 export const Text= styled.p`
     font-family: 'Titillimweb-light';
 `;
-
-export const Grid = styled.div`
+type grild = {
+    width?: string
+}
+export const Grid = styled.div<grild>`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, 
+        minmax(${props=>props.width?props.width:'300px'}, 1fr));
     column-gap: 25px;
     row-gap: 10px;
 `;
