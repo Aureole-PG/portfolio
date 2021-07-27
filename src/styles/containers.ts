@@ -51,12 +51,47 @@ export const Text= styled.p`
     font-family: 'Titillimweb-light';
 `;
 type grild = {
-    width?: string
+    width?: string,
+    max?: string
 }
 export const Grid = styled.div<grild>`
     display: grid;
     grid-template-columns: repeat(auto-fill, 
-        minmax(${props=>props.width?props.width:'300px'}, 1fr));
+        minmax(${props=>props.width?props.width:'300px'},
+        ${props=>props.max?props.max:'1fr'} ));
     column-gap: 25px;
     row-gap: 10px;
+`;
+type col={
+    xs?:number
+    md?: number
+    g?: number
+}
+export const Col= styled.div<col>`
+    float: left;
+    
+    @media (max-width: 600px) {
+        width: ${props=>colWidth(props.xs)};
+    }
+    @media (min-width: 600px) {
+        width: ${props=>colWidth(props.md??props.xs)};
+    }
+    @media (min-width: 992px) {
+        width: ${props=>colWidth(props.g??props.md??props.xs)};
+    }
+    
+
+`;
+const colWidth=(num:number):string=>{
+    if (!num) return "100%"
+    let res=0;
+    res= (num/12)*100;
+    
+    return res.toFixed(2)+'%'
+}
+
+export const Row=styled.div`
+    display: table;
+    width: 100%;
+    height: auto;
 `;

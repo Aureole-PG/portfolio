@@ -1,7 +1,6 @@
-import React,{useEffect, useState} from 'react';
-import {NavS, Item, Link, Slider} from '../styles/navs';
-import {Container} from '../styles/containers';
-const Nav:React.FC=()=> {
+import React, {useState, useEffect} from 'react'
+
+export const useNav=() => {
     const [showFixed, setShowFixed] = useState(false);
     const [currentTab, setCurrentTab] = useState<HTMLElement| null >(null);
     const [currentId, setCurrentId] = useState<HTMLElement| null>(null);
@@ -12,13 +11,13 @@ const Nav:React.FC=()=> {
     }
     const currentTabSelector =()=>{
         let elements=document.getElementsByClassName('tabs')
-        let newCurrentId = null ;
-        let newCurrentTab = null;
+        let newCurrentId:HTMLElement|null = null ;
+        let newCurrentTab:any= null;
         for (let ele of elements) {
-            let idName = ele.getAttribute("href").slice(1);
-            let id: HTMLElement | null = document.getElementById(idName)
-            let offsetTop : number | undefined = id?.offsetTop - 70;
-            let offsetBottom: number | undefined = id?.offsetTop + id?.offsetHeight  - 70
+            let idName: string = ele?.getAttribute("href").slice(1);
+            let id: HTMLElement = document.getElementById(idName) 
+            let offsetTop : number  = id?.offsetTop  - 70;
+            let offsetBottom: number = id?.offsetTop + id?.offsetHeight  - 70
             if (window.pageYOffset > offsetTop && window.pageYOffset < offsetBottom) {
                 newCurrentId= id;
                 newCurrentTab = ele   
@@ -31,7 +30,7 @@ const Nav:React.FC=()=> {
         
     }
   
-    const setSlider= ( currentId:HTMLElement | null, currentTab:HTMLElement )=>{
+    const setSlider= ( currentId:HTMLElement | null, currentTab:HTMLElement|null )=>{
         let width =0;
         let left =0;
 
@@ -56,29 +55,6 @@ const Nav:React.FC=()=> {
             window.removeEventListener('scroll',()=> true);
         }
     },[currentTab])
-    return (
-        <NavS  className={`${showFixed?'fixed':'bottom'} shadow`}>
-            <Container  align="center" justify="center">
-                <Item> 
-                    <Link className="tabs" href="#about">About</Link>    
-                </Item>
-                <Item>
-                    <Link className="tabs" href="#projects">Projets</Link>
-                    
-                </Item>
-                <Item>
-                    <Link className="tabs" href="#skills">Skils</Link>
-                </Item>
-                <Item>
-                    <Link className="tabs" href="#social">Social</Link>
-                </Item>
-                <Item>
-                    <Link>Contact</Link>
-                </Item>
-                <Slider left={sliderStyle.left} width={sliderStyle.width}></Slider>
-            </Container>
-        </NavS>
-    )
-}
 
-export default Nav
+    return{ sliderStyle, showFixed}
+}
