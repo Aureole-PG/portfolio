@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledButtom } from '../styles/buttons';
-import { CardStyled, FocusContent, Img } from '../styles/cards';
-import { Container, Grid } from '../styles/containers';
+import { StyledButtom } from '../../styles/buttons';
+import { CardStyled, FocusContent, Img } from '../../styles/cards';
+import { Container, Grid } from '../../styles/containers';
 
 type card={
     imgUrl?: string,

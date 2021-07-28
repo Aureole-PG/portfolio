@@ -2,11 +2,15 @@ import styled from "styled-components";
 type text={
     textStyle?: string
     margin?: string
+    align?: string
 }
 
-export const Title = styled.p`
+export const Title = styled.p<text>`
     color: black;
     font-size: 1.5rem;
+    font-style: ${props=>props.textStyle};
+    margin: ${props=>props.margin};
+    text-align: ${props=>props.align};
 `;
 
 export const SubTitle = styled.p<text>`
@@ -16,6 +20,7 @@ export const SubTitle = styled.p<text>`
     font-weight: 700;
     font-style: ${props=>props.textStyle};
     margin: ${props=>props.margin};
+    text-align: ${props=>props.align};
     /* font-style: ; */
 
 `
@@ -26,4 +31,5 @@ export const Text = styled.p<text>`
     font-size: 1rem;
     font-style: ${props=>props.textStyle};
     margin: ${props=>props.margin};
+    text-align: ${props=>props.align};
 `

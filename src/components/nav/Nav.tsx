@@ -8,20 +8,19 @@ const Nav:React.FC=()=> {
         <NavS  className={`${showFixed?'fixed':'bottom'} shadow`}>
             <Container  align="center" justify="center">
                 <Item> 
-                    <Link className="tabs" href="#about">About</Link>    
+                    <Link rel="noopener noreferrer" className="tabs" href="#about">About</Link>    
                 </Item>
                 <Item>
-                    <Link className="tabs" href="#projects">Projets</Link>
-                    
+                    <Link rel="noopener noreferrer" className="tabs" href="#skills">Skils</Link>
                 </Item>
                 <Item>
-                    <Link className="tabs" href="#skills">Skils</Link>
+                    <Link rel="noopener noreferrer" className="tabs" href="#projects">Projets</Link> 
                 </Item>
                 <Item>
-                    <Link className="tabs" href="#social">Social</Link>
+                    <Link rel="noopener noreferrer" className="tabs" href="#social">Social</Link>
                 </Item>
                 <Item>
-                    <Link>Contact</Link>
+                    <Link rel="noopener noreferrer" >Contact</Link>
                 </Item>
                 <Slider left={sliderStyle.left} width={sliderStyle.width}></Slider>
             </Container>

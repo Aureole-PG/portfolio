@@ -1,10 +1,12 @@
 import React from 'react'
 import { Img } from '../../styles/aubout'
-import { Container, Grid, ResponsiveContainer,Row, Col } from '../../styles/containers'
-import { SubTitle, Title, Text } from '../../styles/text'
+import { Container, ResponsiveContainer,Row, Col } from '../../styles/containers'
+import { Title, Text } from '../../styles/text'
 import {FaPython, FaReact} from 'react-icons/fa';
 import {IoLogoJavascript, IoLogoNodejs} from 'react-icons/io';
 import {VscDebugBreakpointLog, VscDebugBreakpointLogUnverified} from 'react-icons/vsc';
+import {SiGooglemaps} from 'react-icons/si';
+import { SimpleCard } from '../cards/SimpleCard';
 export const About: React.FC = () => {
     return (
         <ResponsiveContainer>
@@ -35,83 +37,76 @@ export const About: React.FC = () => {
                 <Title>Experience</Title>
                 <Container padding="0 10px" block>
                     <Row>
-                        <Col md={6}>
-                            <Text textStyle="italic" margin="0 0 10px 0">Infinit-Plus - > 21/2019-21/2020</Text>
-                            <Text>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <SimpleCard
+                            title="Infinit-Plus &#9658; 21/2019-21/2020"
+                            description={
+                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Ipsa numquam dolor saepe excepturi facilis similique ipsum
                                 iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?
-                            </Text>
-                            <SubTitle>Tecnologies</SubTitle>
-                            <Container block padding="10px 0 50px 0">
-                                <Grid width={"50px"}>
-                                    <FaPython size={40}/>
-                                    <IoLogoJavascript size={40}/>
-                                    <FaReact size={40}/>
-                                </Grid>
-                            </Container>
-                        </Col>
-                        <Col md={6}>
-                            <Text textStyle="italic" margin="0 0 10px 0">Freelance - > 21/2019-21/2020</Text>
-                            <Text>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                magni eius? Est alias animi doloribus?`
+                            }
+                            subTitle="Tecnologies"
+                            md={6}
+                        >
+                            <FaPython size={40}/>
+                            <IoLogoJavascript size={40}/>
+                            <FaReact size={40}/>
+                            <SiGooglemaps size={40}/>
+                        </SimpleCard>
+                        <SimpleCard
+                            title="Freelance &#9658; 21/2019-21/2020"
+                            description={
+                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Ipsa numquam dolor saepe excepturi facilis similique ipsum
                                 iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?
-                            </Text>
-                            <SubTitle>Tecnologies</SubTitle>
-                            <Container block padding="10px 0 50px 0">
-                                <Grid width={"50px"}>
-                                    <IoLogoNodejs size={40}/>
-                                    <IoLogoJavascript size={40}/>
-                                    <FaReact size={40}/>
-                                </Grid>
-                            </Container>
-                        </Col>
+                                magni eius? Est alias animi doloribus?`
+                            }
+                            subTitle="Tecnologies"
+                            md={6}
+                        >
+                            <IoLogoNodejs size={40}/>
+                            <IoLogoJavascript size={40}/>
+                            <FaReact size={40}/>
+                        </SimpleCard>
                     </Row>
                 </Container>
                 <Title>Laguajes</Title>
                 <Container padding="0 10px" block>
                     <Row>
-                        <Col md={6}>
-                            <Text textStyle="italic" margin="0 0 10px 0">Spanish</Text>
-                            <Text>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <SimpleCard
+                            title="Spanish"
+                            description={
+                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Ipsa numquam dolor saepe excepturi facilis similique ipsum
                                 iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?
-                            </Text>
-                            <SubTitle>Level</SubTitle>
-                            <Container block padding="10px 0 50px 0">
-                                <Grid width={"20px"}>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLog size={20}/>
-                                </Grid>
-                            </Container>
-                        </Col>
-                        <Col md={6}>
-                            <Text textStyle="italic" margin="0 0 10px 0">English</Text>
-                            <Text>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                magni eius? Est alias animi doloribus?`
+                            }
+                            subTitle="Level"
+                            md={6}
+                        >
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                        </SimpleCard>
+                        <SimpleCard
+                            title="English"
+                            description={
+                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Ipsa numquam dolor saepe excepturi facilis similique ipsum
                                 iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?
-                            </Text>
-                            <SubTitle>Level</SubTitle>
-                            <Container block padding="10px 0 50px 0">
-                                <Grid width={"20px"}>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLog size={20}/>
-                                    <VscDebugBreakpointLogUnverified size={20}/>
-                                    <VscDebugBreakpointLogUnverified size={20}/>
-                                    <VscDebugBreakpointLogUnverified size={20}/>
-                                </Grid>
-                            </Container>
-                        </Col>
+                                magni eius? Est alias animi doloribus?`
+                            }
+                            subTitle="Level"
+                            md={6}
+                        >
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLog size={20}/>
+                            <VscDebugBreakpointLogUnverified size={20}/>
+                            <VscDebugBreakpointLogUnverified size={20}/>
+                        </SimpleCard>
                     </Row>
                 </Container>
             </Container>

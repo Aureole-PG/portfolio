@@ -1,9 +1,10 @@
 import React from 'react'
 import Nav from './components/nav/Nav'
-import Card from './components/Cards';
+import Card from './components/cards/Cards';
 import { Container, Grid, ResponsiveContainer } from './styles/containers'
 import { GlobalStyle } from './styles/globalStyles'
 import { About } from './components/about/About';
+import { Skills } from './components/skills/Skills';
 
 export default function App() {
     return (
@@ -18,6 +19,9 @@ export default function App() {
         </Container>
         <Container id="about" className="min-height">
             <About />
+        </Container>
+        <Container id="skills" className="min-height" align="center" justify="center"  >
+            <Skills/>
         </Container>
         <Container id="projects" className="min-height" align="center" justify="center"  >
             <ResponsiveContainer>
@@ -34,9 +38,7 @@ export default function App() {
             </ResponsiveContainer>
                  
         </Container>
-        <Container id="skills" className="min-height" align="center" justify="center"  >
-                        skill
-        </Container>
+        
         <Container id="social" className="min-height" align="center" justify="center"  >
                     social
         </Container>

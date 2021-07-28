@@ -66,10 +66,12 @@ type col={
     xs?:number
     md?: number
     g?: number
+    padding?: string
 }
 export const Col= styled.div<col>`
     float: left;
-    
+    box-sizing: border-box;
+    padding: ${props=>props.padding?props.padding:'0 10px'};
     @media (max-width: 600px) {
         width: ${props=>colWidth(props.xs)};
     }

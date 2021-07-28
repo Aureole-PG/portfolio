@@ -12,7 +12,7 @@ export const useNav=() => {
     const currentTabSelector =()=>{
         let elements=document.getElementsByClassName('tabs')
         let newCurrentId:HTMLElement|null = null ;
-        let newCurrentTab:any= null;
+        let newCurrentTab:any = null;
         for (let ele of elements) {
             let idName: string = ele?.getAttribute("href").slice(1);
             let id: HTMLElement = document.getElementById(idName) 
