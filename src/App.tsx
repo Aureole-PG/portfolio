@@ -3,8 +3,9 @@ import Nav from './components/nav/Nav'
 import Card from './components/cards/Cards';
 import { Container, Grid, ResponsiveContainer } from './styles/containers'
 import { GlobalStyle } from './styles/globalStyles'
-import { About } from './components/about/About';
-import { Skills } from './components/skills/Skills';
+import { About } from './Sections/about/About';
+import { Skills } from './Sections/skills/Skills';
+import { Projects } from './Sections/projects/Projects';
 
 export default function App() {
     return (
@@ -17,30 +18,18 @@ export default function App() {
             </Container>
             <Nav/>
         </Container>
-        <Container id="about" className="min-height">
+        <Container id="about" padding="70px 0 0 0" className="min-height">
             <About />
         </Container>
-        <Container id="skills" className="min-height" align="center" justify="center"  >
+        <Container id="skills" padding="70px 0 0 0" className="min-height" align="center" justify="center"  >
             <Skills/>
         </Container>
-        <Container id="projects" className="min-height" align="center" justify="center"  >
-            <ResponsiveContainer>
-                <h1>Projets</h1>
-                <Grid>
-                    {[1,2,3].map((e, i)=>(
-                        <Card
-                            key={i}
-                            imgUrl="https://via.placeholder.com/150"
-                            name="nombre"
-                        />
-                    ))}
-                </Grid>
-            </ResponsiveContainer>
-                 
+        <Container id="projects" padding="70px 0 0 0" className="min-height" align="center" justify="center"  >
+            <Projects/>
         </Container>
         
-        <Container id="social" className="min-height" align="center" justify="center"  >
-                    social
+        <Container id="contact" className="min-height" align="center" justify="center"  >
+            social
         </Container>
         </>
     )

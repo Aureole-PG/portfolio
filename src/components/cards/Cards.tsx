@@ -1,14 +1,17 @@
 import React from 'react';
-import { StyledButtom } from '../../styles/buttons';
+import { LinkButton, StyledButtom } from '../../styles/buttons';
 import { CardStyled, FocusContent, Img } from '../../styles/cards';
 import { Container, Grid } from '../../styles/containers';
 
 type card={
-    imgUrl?: string,
-    name?: string
+    imgUrl: string
+    name: string
+    links?: { link: string, name:string, buttonType?: string }[]
+    description?: string
+
 }
 
-const Card:React.FC<card> =({imgUrl , name}) => {
+const Card:React.FC<card> =({imgUrl , name, links, description}) => {
     return (
         
         <CardStyled>
@@ -16,15 +19,19 @@ const Card:React.FC<card> =({imgUrl , name}) => {
             <Img src={imgUrl}/>
             
             <FocusContent>
-                <Container block  padding="0 10px 0 10px">
+                <Container block  width="100%" padding="0 10px 0 10px">
                     <h4>{name}</h4>
                     <p>
-                        Lorem ipsum dolor, sit amet ciciatis excepturi earum sit id aliquid ad modi inventore aspernatur veritatis, rerum doloribus.</p> 
+                        {description}
+                    </p> 
                         <Container width="100%" block>
                             <Grid width="100px">
-                                <StyledButtom margin="5px 5px 0 5px">primary</StyledButtom>
-                                <StyledButtom margin="5px 5px 0 5px" buttonType="secondary">secodary</StyledButtom>
-                                <StyledButtom margin="5px 5px 0 5px" buttonType="secondary">secodary</StyledButtom>
+                                {links.map((link, i)=>(
+                                    <LinkButton key={i} target="_blank" rel="noopener noreferrer" margin="5px 5px 0 5px" href={link.link} buttonType={"secondary"}>
+                                        
+                                        {link.name}
+                                    </LinkButton>    
+                                ))}
                             </Grid>
                             
                         </Container>

@@ -1,8 +1,9 @@
 import React from 'react'
-import { IconCard } from '../cards/SimpleCard';
+import { IconCard } from '../../components/cards/SimpleCard';
 import { Container, Grid, ResponsiveContainer } from '../../styles/containers';
 import {FaPython, FaReact} from 'react-icons/fa';
 import {IoLogoJavascript, IoLogoNodejs, IoLogoHtml5, IoLogoCss3, IoLogoAngular} from 'react-icons/io';
+import { SiTypescript } from 'react-icons/si';
 import { Title } from '../../styles/text';
 export const Skills:React.FC=()=> {
     return (
@@ -17,7 +18,12 @@ export const Skills:React.FC=()=> {
                     />
                     <IconCard
                         icon={<IoLogoJavascript size={60}/>}
-                        title="Javascript"
+                        title="JavaScript"
+                        description=""
+                    />
+                    <IconCard
+                        icon={<SiTypescript size={60}/>}
+                        title="TypeScript"
                         description=""
                     />
                     <IconCard
@@ -36,13 +42,13 @@ export const Skills:React.FC=()=> {
                         description=""
                     />
                     <IconCard
-                        icon={<FaPython size={60}/>}
-                        title="Python"
+                        icon={<IoLogoAngular size={60}/>}
+                        title="Angular"
                         description=""
                     />
                     <IconCard
-                        icon={<IoLogoAngular size={60}/>}
-                        title="Angular"
+                        icon={<FaPython size={60}/>}
+                        title="Python"
                         description=""
                     />
                 </Grid>

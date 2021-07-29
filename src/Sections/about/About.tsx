@@ -6,7 +6,7 @@ import {FaPython, FaReact} from 'react-icons/fa';
 import {IoLogoJavascript, IoLogoNodejs} from 'react-icons/io';
 import {VscDebugBreakpointLog, VscDebugBreakpointLogUnverified} from 'react-icons/vsc';
 import {SiGooglemaps} from 'react-icons/si';
-import { SimpleCard } from '../cards/SimpleCard';
+import { SimpleCard } from '../../components/cards/SimpleCard';
 export const About: React.FC = () => {
     return (
         <ResponsiveContainer>
@@ -14,8 +14,8 @@ export const About: React.FC = () => {
                 <Container block width="100%">
                     <Row>
                         <Col xs={12} md={6} >
-                            <Container align="center" justify="center">
-                                <Img src="https://via.placeholder.com/150"/>
+                            <Container align="center" padding="0 0 20px" justify="center">
+                                <Img src="https://avatars.githubusercontent.com/u/29669464?s=400&u=a8b0c1b77dfd6dca5bc0154025abad7f5bcc3b57&v=4"/>
                             </Container>
                         </Col>
                         <Col xs={12} md={6} >

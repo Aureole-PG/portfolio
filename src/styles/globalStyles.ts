@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import TitilliumWeb_black from '../fonts/TitilliumWeb-Black.ttf';
 import TitilliumWeb_bold from '../fonts/TitilliumWeb-Bold.ttf';
 import TitilliumWeb_light from '../fonts/TitilliumWeb-Light.ttf';
+
 export const GlobalStyle= createGlobalStyle`
     @font-face {
         font-family: 'Titillimweb-black';

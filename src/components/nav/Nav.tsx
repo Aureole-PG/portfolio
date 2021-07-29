@@ -17,10 +17,7 @@ const Nav:React.FC=()=> {
                     <Link rel="noopener noreferrer" className="tabs" href="#projects">Projets</Link> 
                 </Item>
                 <Item>
-                    <Link rel="noopener noreferrer" className="tabs" href="#social">Social</Link>
-                </Item>
-                <Item>
-                    <Link rel="noopener noreferrer" >Contact</Link>
+                    <Link rel="noopener noreferrer" className="tabs" href="#contact">Contact</Link>
                 </Item>
                 <Slider left={sliderStyle.left} width={sliderStyle.width}></Slider>
             </Container>

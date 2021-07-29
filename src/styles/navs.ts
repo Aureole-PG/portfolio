@@ -5,13 +5,13 @@ type navTypes={
 export const NavS = styled.nav<navTypes>`
     background-color: rgba(255, 255, 255, .15);  
     position: ${props=>props.position?props.position:'absolute'};
-    padding-inline: 15px;
+    /* padding-inline: 15px; */
     width: 100%;
     box-sizing: border-box;
     height: 70px;
     backdrop-filter: blur(5px);
     &.shadow{
-        box-shadow: 0px 15px 10px -15px #111;
+        box-shadow: 0px 20px 20px -20px #1111114d;
     }
     &.bottom{
         bottom: 0;
