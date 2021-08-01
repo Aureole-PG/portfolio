@@ -13,7 +13,7 @@ export const StyledButtom = styled.button<button>`
     min-width: 100px;
     border: 2px solid ${props=>props.buttonType?typeButton(props.buttonType):'#00000091'};
     background-color: transparent;
-    
+    cursor: pointer;
     :hover{
         box-shadow: 0px 0px 6px 0px ${props=>props.buttonType?typeButton(props.buttonType):'black'};
     }
