@@ -46,11 +46,7 @@ export const About: React.FC = () => {
                             }
                             subTitle="Tecnologies"
                             md={6}
-                            imgs={[
-                                'https://via.placeholder.com/150',
-                                'https://via.placeholder.com/250',
-                                'https://via.placeholder.com/350'
-                            ]}
+                            imgs={['https://i.imgur.com/nFsqYHa.png']}
                         >
                             <FaPython size={40}/>
                             <IoLogoJavascript size={40}/>
@@ -58,12 +54,13 @@ export const About: React.FC = () => {
                             <SiGooglemaps size={40}/>
                         </SimpleCard>
                         <SimpleCard
-                            title="Freelance &#9658; 21/2019-21/2020"
+                            title="Freelance &#9658; 09/2020"
                             description={
                                 `I work in a team to create a web management system for a printers company, this application has inventory, invoices, contracts, etc. and different level users`
                             }
                             subTitle="Tecnologies"
                             md={6}
+                            imgs={['https://i.imgur.com/knpuKwy.jpg']}
                         >
                             <IoLogoNodejs size={40}/>
                             <IoLogoJavascript size={40}/>

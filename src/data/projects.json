@@ -14,38 +14,6 @@
                 "type": "deploy",
                 "link": "https://pet-map-pegjz8jwl-aureole-pg.vercel.app/login"
             }
-
-        ]
-    },
-    {
-        "name": "Restaurant Control",
-        "description": "",
-        "img": "",
-        "links":[
-            {
-                "name": "GitHub",
-                "type": "repo",
-                "link": "https://github.com/Aureole-PG/restaurant_control"
-            },
-            {
-                "name": "Page",
-                "type": "deploy",
-                "link": "https://restaurant-control-931f3koto-aureole-pg.vercel.app/"
-            }
-
-        ]
-    },
-    {
-        "name": "Portfolio",
-        "description": "",
-        "img": "",
-        "links":[
-            {
-                "name": "GitHub",
-                "type": "repo",
-                "link": "https://github.com/Aureole-PG/portfolio"
-            }
-
         ]
     }
 ]
