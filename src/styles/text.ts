@@ -3,6 +3,7 @@ type text={
     textStyle?: string
     margin?: string
     align?: string
+    color?: string
 }
 
 export const Title = styled.p<text>`
@@ -26,7 +27,7 @@ export const SubTitle = styled.p<text>`
 `
 
 export const Text = styled.p<text>`
-    color: #797979;
+    color: ${props=>props.color?props.color:'#797979'} ;
     letter-spacing: 0.1rem;
     font-size: 1rem;
     font-style: ${props=>props.textStyle};

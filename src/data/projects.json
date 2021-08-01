@@ -1,7 +1,7 @@
 [
     {
         "name": "PetMap",
-        "description": "",
+        "description": "This project is created with Next.js and Node.js. In this application you can register your pets with an Id an traking his position with google maps, also has an external api to added data from another aplication ",
         "img": "https://i.imgur.com/HwQCDuA.png",
         "links":[
             {

@@ -23,10 +23,10 @@ export const About: React.FC = () => {
                                 <Container block>
                                     <Title>Paul Ganan</Title>
                                     <Text>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ut doloremque sed hic sint corrupti debitis ipsam perspiciatis, in nemo. Eum accusamus tempore sunt autem eveniet earum animi sed molestiae!
+                                        I'm a web developer specialized in react.js I'm from Ecuador and graduated 
+                                        on Universidad Central Del Ecuador as a programer Teacher 
                                     </Text>
                                     
-                                
                                 </Container>
                             </Container>
                         </Col>
@@ -38,15 +38,19 @@ export const About: React.FC = () => {
                 <Container padding="0 10px" block>
                     <Row>
                         <SimpleCard
-                            title="Infinit-Plus &#9658; 21/2019-21/2020"
+                            title="Infinit-Plus &#9658; 04/2019-09/2020"
                             description={
-                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Ipsa numquam dolor saepe excepturi facilis similique ipsum
-                                iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?`
+                                `
+                                Its a development company where I worked in various projects like a Tickets System for a bank, Car management with react native and Tax calculator
+                                `
                             }
                             subTitle="Tecnologies"
                             md={6}
+                            imgs={[
+                                'https://via.placeholder.com/150',
+                                'https://via.placeholder.com/250',
+                                'https://via.placeholder.com/350'
+                            ]}
                         >
                             <FaPython size={40}/>
                             <IoLogoJavascript size={40}/>
@@ -56,10 +60,7 @@ export const About: React.FC = () => {
                         <SimpleCard
                             title="Freelance &#9658; 21/2019-21/2020"
                             description={
-                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Ipsa numquam dolor saepe excepturi facilis similique ipsum
-                                iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?`
+                                `I work in a team to create a web management system for a printers company, this application has inventory, invoices, contracts, etc. and different level users`
                             }
                             subTitle="Tecnologies"
                             md={6}
@@ -76,10 +77,9 @@ export const About: React.FC = () => {
                         <SimpleCard
                             title="Spanish"
                             description={
-                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Ipsa numquam dolor saepe excepturi facilis similique ipsum
-                                iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?`
+                                `
+                                    Native proficient
+                                `
                             }
                             subTitle="Level"
                             md={6}
@@ -93,10 +93,9 @@ export const About: React.FC = () => {
                         <SimpleCard
                             title="English"
                             description={
-                                `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Ipsa numquam dolor saepe excepturi facilis similique ipsum
-                                iusto, ad culpa aliquam quidem facere ipsam sapiente 
-                                magni eius? Est alias animi doloribus?`
+                                `
+                                Ideal for work I have B2 level on different Quiz
+                                `
                             }
                             subTitle="Level"
                             md={6}

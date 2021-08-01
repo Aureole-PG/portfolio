@@ -1,14 +1,13 @@
 import React from 'react';
-import { LinkButton, StyledButtom } from '../../styles/buttons';
+import { LinkButton } from '../../styles/buttons';
 import { CardStyled, FocusContent, Img } from '../../styles/cards';
 import { Container, Grid } from '../../styles/containers';
-
+import {Text} from '../../styles/text';
 type card={
     imgUrl: string
     name: string
     links?: { link: string, name:string, buttonType?: string }[]
     description?: string
-
 }
 
 const Card:React.FC<card> =({imgUrl , name, links, description}) => {
@@ -21,9 +20,9 @@ const Card:React.FC<card> =({imgUrl , name, links, description}) => {
             <FocusContent>
                 <Container block  width="100%" padding="0 10px 0 10px">
                     <h4>{name}</h4>
-                    <p>
+                    <Text color="#f1f1f1">
                         {description}
-                    </p> 
+                    </Text> 
                         <Container width="100%" block>
                             <Grid width="100px">
                                 {links.map((link, i)=>(

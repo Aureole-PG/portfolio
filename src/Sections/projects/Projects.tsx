@@ -15,6 +15,7 @@ export const Projects: React.FC = () => {
                         imgUrl={e.img?e.img:"https://via.placeholder.com/150"}
                         name={e.name}
                         links={ e.links}
+                        description={e.description}
                     />
                 ))}
             </Grid>

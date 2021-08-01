@@ -2,8 +2,9 @@ import React from 'react';
 import { ReactNode } from 'react';
 import { Container, Col, Grid } from '../../styles/containers';
 import { Text, SubTitle } from '../../styles/text'; 
-
-
+import {Img} from '../../styles/cards';
+import RViewerJS from 'viewerjs-react';
+import 'viewerjs-react/dist/index.css';
 type card={
     title: string
     description: string
@@ -11,15 +12,31 @@ type card={
     md?: number
     xs?: number
     g?: number
+    imgs?: string[]
 }
 
-export const SimpleCard:React.FC<card>= ({title, description, subTitle, md , xs , g,children})=> {
+export const SimpleCard:React.FC<card>= ({title, description, subTitle, md , xs , g,children, imgs})=> {
+    
     return (
         <Col  xs={xs} md={md} g={g}>
-            <Text textStyle="italic" margin="10px 0 10px 0">{title}</Text>
+            <SubTitle textStyle="italic" margin="10px 0 10px 0">{title}</SubTitle>
             <Text>
                 {description}
             </Text>
+            {
+                imgs&&(
+                    <Container block padding="10px 0">
+                        <RViewerJS>
+                            <Grid width={"50px"} id="images">   
+                                    {imgs.map((e,index)=>(
+                                        <Img key={index} src={e} height="50px" width="50px"/>
+                                    ))}
+                            </Grid>
+                        </RViewerJS>
+                    </Container>
+                )
+            }
+            
             <SubTitle>{subTitle}</SubTitle>
             <Container block padding="10px 0 50px 0">
                 <Grid width={"20px"}>
