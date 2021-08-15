@@ -5,9 +5,8 @@ import { GlobalStyle } from './styles/globalStyles'
 import { About } from './Sections/about/About';
 import { Skills } from './Sections/skills/Skills';
 import { Projects } from './Sections/projects/Projects';
-import { StyledButtom } from './styles/buttons';
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import { Text } from './styles/text';
+import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
+import {Contact} from './Sections/contact/Contact';
 export default function App() {
     return (
         <>
@@ -32,11 +31,8 @@ export default function App() {
         <Container id="projects" padding="70px 0 0 0" className="min-height" align="center" justify="center"  >
             <Projects/>
         </Container>
-        
         <Container id="contact" className="min-height" align="center" justify="center"  >
-            <StyledButtom onClick={()=>window.location.href = "mailto:paulisrael95@gmail.com?subject=Contact&body="}>
-                <Text>Send me an email</Text>
-            </StyledButtom>
+            <Contact/>
         </Container>
         </>
     )

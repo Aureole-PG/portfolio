@@ -23,8 +23,7 @@ export const About: React.FC = () => {
                                 <Container block>
                                     <Title>Paul Ganan</Title>
                                     <Text>
-                                        I'm a web developer specialized in react.js I'm from Ecuador and graduated 
-                                        on Universidad Central Del Ecuador as a programer Teacher 
+                                        I'm a web developer specialized in react.js I'm from Ecuador and graduated on Universidad Central Del Ecuador as computing Teacher
                                     </Text>
                                     
                                 </Container>
@@ -41,7 +40,7 @@ export const About: React.FC = () => {
                             title="Infinit-Plus &#9658; 04/2019-09/2020"
                             description={
                                 `
-                                Its a development company where I worked in various projects like a Tickets System for a bank, Car management with react native and Tax calculator
+                                Its a development company where I worked in various projects like a Tickets System for a bank, Car management and Tax calculator
                                 `
                             }
                             subTitle="Tecnologies"
